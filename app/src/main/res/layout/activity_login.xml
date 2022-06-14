@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/darker_gray"
+    tools:context=".LoginActivity">
+
+    <TextView
+    android:id="@+id/text2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="92dp"
+    android:layout_marginRight="10dp"
+    android:text="Login"
+    android:minHeight="48dp"
+    android:padding="10dp"
+    android:textSize="25sp"
+    android:textColor="#fff"
+    android:textColorHint="#fff"/>
+    <EditText
+        android:id="@+id/usernameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginRight="10dp"
+        android:autofillHints=""
+        android:hint="Enter username..."
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/text2" />/>
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter password..."
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/usernameLogin" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        app:backgroundTint="#B6B6B6"
+        android:layout_below="@+id/passwordLogin"
+        android:textSize="25dp"/>
+</RelativeLayout>

@@ -4,6 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/btnLoginOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:text="LoginOut"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        app:backgroundTint="#B6B6B6"
+        android:textSize="25dp"/>
+
         <TextView
             android:id="@+id/tasksText"
             android:layout_width="wrap_content"
@@ -14,7 +26,18 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:textSize="32sp"
-            android:text="@string/tasks" />
+            android:text="@string/tasks"
+            android:layout_below="@+id/tasksText2" />
+    <TextView
+        android:id="@+id/tasksText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="16dp"
+        android:textSize="10sp"
+        android:text="Swipe left to delete or right to edit!"
+        android:layout_below="@+id/btnLoginOut" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/tasksRecyclerView"
